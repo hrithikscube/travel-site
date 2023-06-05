@@ -44,7 +44,7 @@ const Logo = () => {
 
 const MenuItems = () => {
     return (
-        <div className='flex items-center gap-10'>
+        <div className='lg:flex hidden items-center gap-10'>
             {
                 menuItems.map((item: any) => (
                     <p className='text-lg cursor-pointer font-outfitRegular capitalize'>
