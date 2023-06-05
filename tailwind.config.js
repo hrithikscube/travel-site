@@ -7,6 +7,11 @@ module.exports = {
     extend: {
       colors: {
         themeBlue: '#DDEFFD'
+      },
+      fontFamily: {
+        'juaRegular': ['Jua Regular'],
+        'outfitRegular': ['Outfit Regular'],
+        'outfitBold': ['Outfit Bold'],
       }
     },
   },
