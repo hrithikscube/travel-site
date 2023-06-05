@@ -47,7 +47,7 @@ const MenuItems = () => {
         <div className='flex items-center gap-10'>
             {
                 menuItems.map((item: any) => (
-                    <p className='text-base font-sans capitalize'>
+                    <p className='text-lg cursor-pointer font-outfitRegular capitalize'>
                         {item.name}
                     </p>
                 ))
