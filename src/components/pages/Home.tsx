@@ -1,7 +1,7 @@
-import React from 'react'
 import Header from '../Header'
 import Banner from '../Banner'
 import SeeWorld from '../SeeWorld'
+import RatingCard from '../RatingCard'
 
 const Home = () => {
   return (
@@ -9,6 +9,10 @@ const Home = () => {
       <Header />
       <Banner />
       <SeeWorld />
+      <RatingCard type="white" />
+      <br />
+      <RatingCard type="blue" />
+
     </div>
   )
 }
