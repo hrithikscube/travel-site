@@ -1,9 +1,11 @@
-import Header from '../Header'
-import Banner from '../Banner'
-import SeeWorld from '../SeeWorld'
-import RatingCard from '../RatingCard'
-import Title from '../Title'
-import HeroSection from '../sections/HeroSection'
+import Header from "../Header";
+import Banner from "../Banner";
+import SeeWorld from "../SeeWorld";
+import RatingCard from "../RatingCard";
+import Title from "../Title";
+import HeroSection from "../sections/HeroSection";
+import PopularPackages from "../sections/PopularPackages";
+import RatingSection from "../sections/RatingSection";
 
 const Home = () => {
   return (
@@ -11,14 +13,11 @@ const Home = () => {
       <Header />
       <HeroSection />
       <Banner />
-      <Title />
-      <Title heading="Read our Rating Reviews" subheading="testimonials"/>
-      <RatingCard type="white" />
-      <br/>
-      <RatingCard type="blue" />
+      <PopularPackages />
+      <RatingSection />
       <SeeWorld />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
