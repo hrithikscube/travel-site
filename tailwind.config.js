@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         'juaRegular': ['Jua Regular'],
         'outfitRegular': ['Outfit Regular'],
+        'outfitMedium': ['Outfit Medium'],
         'outfitBold': ['Outfit Bold'],
       }
     },
