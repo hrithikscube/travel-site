@@ -46,8 +46,7 @@ const HeroSection = () => {
       opacity: 1,
       duration: 1,
       x: 0,
-      ease: 'power1.easeInOut'
-
+      ease: 'power1.easeInOut',
     })
 
     gsap.set('.hero', {
@@ -73,12 +72,10 @@ const HeroSection = () => {
       opacity: 1,
       duration: 1
     })
-
-
   }, [])
 
   return (
-    <div className="lg:px-20 px-5 flex lg:flex-row flex-col items-center justify-between">
+    <div className="lg:px-20 px-5 flex lg:flex-row flex-col items-center justify-between heroContainer">
       <div className="flex flex-col gap-5 p-5 ">
         <p className="lg:text-7xl text-5xl font-juaRegular leading-tight textSection">
           Experience the <br />

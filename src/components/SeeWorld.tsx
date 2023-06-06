@@ -14,7 +14,12 @@ const SeeWorld = () => {
         gsap.to('.seeText', {
             opacity: 1,
             stagger: 0.1,
-            duration: 1
+            duration: 1,
+            scrollTrigger: {
+                trigger: '.ratingsContainer',
+                start: 'center',
+                scrub: 1
+            }
         })
 
         gsap.set('.kyoto', {
@@ -24,7 +29,12 @@ const SeeWorld = () => {
         gsap.to('.kyoto', {
             x: 0,
             opacity: 1,
-            duration: 1
+            duration: 1,
+            scrollTrigger: {
+                trigger: '.ratingsContainer',
+                start: 'center',
+                scrub: 1
+            }
         })
 
         gsap.set('.getStarted', {
@@ -34,7 +44,12 @@ const SeeWorld = () => {
         gsap.to('.getStarted', {
             y: 0,
             opacity: 1,
-            duration: 1
+            duration: 1,
+            scrollTrigger: {
+                trigger: '.ratingsContainer',
+                start: 'center',
+                scrub: 1
+            }
         })
     }, [])
 
