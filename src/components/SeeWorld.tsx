@@ -51,10 +51,23 @@ const SeeWorld = () => {
                 scrub: 1
             }
         })
+
+        gsap.set('.seeWorld', {
+            y: 200,
+            opacity: 0
+        })
+        gsap.to('.seeWorld', {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            
+        })
+
+
     }, [])
 
     return (
-        <div className='flex lg:flex-row flex-col justify-around items-center w-[90%] relative bg-[#BCDFFB] m-auto lg:rounded-[120px] my-20 p-10 rounded-2xl'>
+        <div className='flex lg:flex-row flex-col justify-around items-center w-[90%] relative bg-[#BCDFFB] m-auto lg:rounded-[120px] my-20 p-10 rounded-2xl seeWorld'>
             <img src={kyoto} alt={kyoto} className=' lg:w-[500px] lg:h-[500px] kyoto' />
             <div className='flex flex-col justify-center items-center gap-10 text-center'>
                 <p className='lg:text-5xl text-3xl font-outfitMedium text-[#263238] leading-tight'>{"See the world,".split(' ').map(item => (
