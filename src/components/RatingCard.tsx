@@ -31,11 +31,11 @@ const Ratings = ({ variant }: any) => {
     )
 }
 
-const RatingCard = ({ type }: any) => {
+const RatingCard = ({ type, selector }: any) => {
     return (
         <React.Fragment>
             {type === 'blue' && (
-                <div className='bg-[#BCDFFB] p-10 lg:w-[665px] relative shadow-2xl border-2 border-black rounded-xl'>
+                <div className={`bg-[#BCDFFB] p-10 lg:w-[665px] w-[330px] relative border-2 border-black rounded-xl ml-5 ${selector}`}>
                     <p className='text-lg font-outfitMedium text-[#263238]'>Liam S</p>
                     <p className='text-base text-[#263238] font-outfitRegular'>Hollyword, CA</p>
                     <p className='text-sm text-[#263238]'>Esse in aute labore deserunt eu do est duis proident amet fugiat.Magna voluptate magna aliquip aliquip deserunt voluptate Lorem sit sint.</p>
@@ -47,8 +47,8 @@ const RatingCard = ({ type }: any) => {
             )}
 
             {type === 'white' && (
-                <div className='bg-[#fcfcfc] p-10 lg:w-[665px] relative shadow-2xl border-2 border-black rounded-xl'>
-                    <p className='text-lg font-outfitMedium text-[#263238]'>Liam S</p>
+                <div className={`bg-[#fcfcfc] p-10 lg:w-[665px] w-[330px] relative border-2 border-black rounded-xl ml-5 ${selector}`}>
+                    <p className='text-lg font-outfitMedium text-[#BCDFFB]'>Liam S</p>
                     <p className='text-base text-[#263238] font-outfitRegular'>Hollyword, CA</p>
                     <p className='text-sm text-[#263238]'>Esse in aute labore deserunt eu do est duis proident amet fugiat.Magna voluptate magna aliquip aliquip deserunt voluptate Lorem sit sint.</p>
 

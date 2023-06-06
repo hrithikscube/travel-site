@@ -59,7 +59,7 @@ const MenuItems = () => {
 const Header = () => {
 
     return (
-        <div className='flex items-center justify-between lg:px-10 px-5'>
+        <div className='flex items-center justify-between lg:px-10 px-5 py-5'>
             <Logo />
             <MenuItems />
             <ButtonGroup />
