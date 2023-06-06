@@ -21,12 +21,17 @@ const PopularPackages = () => {
     gsap.to([".HotDeals", ".Honeymoon", ".Backpacking", ".Europe", ".Asia", ".More", ".imgCard"], {
       x: 0,
       opacity: 1,
-      stagger: 0.1
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: '.mybanner',
+        start: 'top',
+        scrub: 1
+      }
     })
 
   }, [])
   return (
-    <div className="lg:px-20 px-5">
+    <div className="lg:px-20 px-5 popularContainer">
       <Title />
 
       <div className="lg:px-20 px-5">

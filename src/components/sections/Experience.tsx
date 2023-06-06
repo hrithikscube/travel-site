@@ -15,7 +15,12 @@ const Experience = () => {
             stagger: 0.1,
             x: 0,
             opacity: 1,
-            duration: 2
+            duration: 2,
+            scrollTrigger: {
+                trigger: '.popularContainer',
+                start: 'center',
+                scrub: 1
+            }
         })
 
 
@@ -27,23 +32,34 @@ const Experience = () => {
             stagger: 0.1,
             x: 0,
             opacity: 1,
-            duration: 1
+            duration: 1,
+            scrollTrigger: {
+                trigger: '.popularContainer',
+                start: 'center',
+                scrub: 1
+            }
         })
 
         gsap.set('.stats', {
             y: 100,
-            opacity: 0
+            opacity: 0,
+            
         })
         gsap.to('.stats', {
             stagger: 0.1,
             y: 0,
             opacity: 1,
+            scrollTrigger: {
+                trigger: '.popularContainer',
+                start: 'center',
+                scrub: 1
+            }
         })
 
     }, [])
 
     return (
-        <div className='bg-[#BCDFFB] w-full flex lg:flex-row flex-col lg:justify-between justify-center items-center gap-10 lg:p-20 p-10'>
+        <div className='bg-[#BCDFFB] w-full flex lg:flex-row flex-col lg:justify-between justify-center items-center gap-10 lg:p-20 p-10 experienceContainer'>
 
             <div className="flex flex-col gap-5 lg:w-[700px] ">
                 <p className="uppercase text-white text-2xl font-outfitBold expContent">our experience</p>

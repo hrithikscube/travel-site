@@ -9,15 +9,20 @@ const Banner = ({ title }: any) => {
         gsap.registerPlugin(ScrollToPlugin, ScrollTrigger)
 
         gsap.set('.mybanner', {
-            // width: '80%',
+            width: '80%',
             opacity: 0,
-            scaleY: 0
+            // scaleY: 0
         })
         gsap.to('.mybanner', {
-            // width: '100%',
-            scaleY: 1,
+            width: '100%',
+            // scaleY: 1,
             opacity: 1,
             // duration: 1,
+            scrollTrigger: {
+                trigger: '.heroContainer',
+                start: 'top',
+                scrub: 1
+            }
         })
     }, [])
 
