@@ -43,7 +43,7 @@ const Experience = () => {
         gsap.set('.stats', {
             y: 100,
             opacity: 0,
-            
+
         })
         gsap.to('.stats', {
             stagger: 0.1,
@@ -89,8 +89,14 @@ const Experience = () => {
             </div>
 
             <div className="flex lg:flex-row flex-col gap-10">
-                <div className="w-[300px] h-[300px] rounded-3xl shadow-md bg-[#f2f2f2] imageCard" />
-                <div className="w-[300px] h-[300px] rounded-3xl shadow-md bg-[#d9d9d9] imageCard" />
+                {/* <div className="w-[300px] h-[300px] rounded-3xl shadow-md bg-[#f2f2f2] imageCard" /> */}
+                <div>
+                    <img src={`https://picsum.photos/id/${Math.floor(Math.random() * 100)}/300`} alt="" className="imageCard rounded-3xl shadow-md w-[300px] h-[300px]" />
+                </div>
+                <div>
+                    <img src={`https://picsum.photos/id/${Math.floor(Math.random() * 100)}/300`} alt="" className="imageCard rounded-3xl shadow-md w-[300px] h-[300px]" />
+                </div>
+                {/* <div className="w-[300px] h-[300px] rounded-3xl shadow-md bg-[#d9d9d9] imageCard" /> */}
 
             </div>
         </div>

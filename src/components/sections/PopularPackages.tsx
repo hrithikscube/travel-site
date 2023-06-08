@@ -55,7 +55,8 @@ const PopularPackages = () => {
       <div className="flex lg:flex-row flex-col justify-center items-center gap-20 my-20 lg:px-20 px-5">
         {[1, 1, 1].map((item: any) => (
           <div className="lg:w-[300px] imgCard">
-            <div className="bg-[#DDEFFD] w-[300px] h-[250px] rounded-3xl shadow-md" />
+            {/* <div className="bg-[#DDEFFD] w-[300px] h-[250px] rounded-3xl shadow-md" /> */}
+            <img src={`https://picsum.photos/id/${Math.floor(Math.random() * 100)}/300/250`} alt="" className=" w-[300px] h-[250px] rounded-3xl shadow-md" />
             <div className="flex flex-col mt-2">
               <div className="flex items-center justify-between">
                 <p>7 Days, 6 Nights</p> <p>$348/person</p>
